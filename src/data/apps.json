@@ -1,0 +1,44 @@
+[
+  {
+    "id": "app1",
+    "name": "App Name One",
+    "tagline": "Your productivity companion",
+    "description": "A powerful app that helps you stay organized and productive. Track your tasks, set reminders, and achieve your goals effortlessly.",
+    "icon": "📱",
+    "appStoreUrl": "https://apps.apple.com/app/your-app-1",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.yourapp1",
+    "features": [
+      "Smart task management",
+      "Cloud sync across devices",
+      "Beautiful dark mode"
+    ]
+  },
+  {
+    "id": "app2",
+    "name": "App Name Two",
+    "tagline": "Simplify your daily routine",
+    "description": "An intuitive app designed to streamline your daily activities. From morning routines to evening wind-downs, manage it all in one place.",
+    "icon": "🚀",
+    "appStoreUrl": "https://apps.apple.com/app/your-app-2",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.yourapp2",
+    "features": [
+      "Habit tracking",
+      "Customizable routines",
+      "Progress analytics"
+    ]
+  },
+  {
+    "id": "app3",
+    "name": "App Name Three",
+    "tagline": "Connect and collaborate",
+    "description": "Stay connected with your team and collaborate seamlessly. Share ideas, track progress, and build amazing things together.",
+    "icon": "✨",
+    "appStoreUrl": "https://apps.apple.com/app/your-app-3",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.yourapp3",
+    "features": [
+      "Real-time collaboration",
+      "Secure messaging",
+      "File sharing"
+    ]
+  }
+]

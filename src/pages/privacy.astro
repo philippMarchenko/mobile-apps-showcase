@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Privacy Policy | Your Name" description="Privacy policy for our mobile applications">
+  <Header />
+  
+  <main class="py-16 px-4">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
+      
+      <div class="prose prose-lg max-w-none">
+        <p class="text-gray-600 mb-6">Last updated: January 29, 2026</p>
+        
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Introduction</h2>
+          <p class="text-gray-600">
+            Your privacy is important to us. This privacy policy explains how we collect, 
+            use, and protect your personal information when you use our mobile applications.
+          </p>
+        </section>
+        
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Information We Collect</h2>
+          <p class="text-gray-600 mb-4">
+            We may collect the following types of information:
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>Information you provide directly (account information, preferences)</li>
+            <li>Usage data (how you interact with our apps)</li>
+            <li>Device information (device type, operating system version)</li>
+          </ul>
+        </section>
+        
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">How We Use Your Information</h2>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>To provide and improve our services</li>
+            <li>To personalize your experience</li>
+            <li>To communicate with you about updates and features</li>
+            <li>To ensure the security of our apps</li>
+          </ul>
+        </section>
+        
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Data Security</h2>
+          <p class="text-gray-600">
+            We implement appropriate technical and organizational measures to protect 
+            your personal information against unauthorized access, alteration, disclosure, or destruction.
+          </p>
+        </section>
+        
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
+          <p class="text-gray-600">
+            If you have any questions about this privacy policy, please contact us at:
+            <a href="mailto:your.email@example.com" class="text-primary hover:underline">
+              your.email@example.com
+            </a>
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>
