@@ -1,44 +1,47 @@
 [
   {
-    "id": "app1",
-    "name": "App Name One",
-    "tagline": "Your productivity companion",
-    "description": "A powerful app that helps you stay organized and productive. Track your tasks, set reminders, and achieve your goals effortlessly.",
+    "id": "qr-anything",
+    "name": "QR Anything",
+    "tagline": "Your complete QR code companion",
+    "description": "A friendly, full-featured Android app that makes working with QR codes simple. Create professional QR codes in seconds, scan any code instantly, and keep everything organized in one place.",
     "icon": "📱",
-    "appStoreUrl": "https://apps.apple.com/app/your-app-1",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.yourapp1",
+    "appStoreUrl": "https://apps.apple.com/app/qr-anything",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.neuraapps.qranything",
     "features": [
-      "Smart task management",
-      "Cloud sync across devices",
-      "Beautiful dark mode"
+      "Generate QR codes from text, links, Wi-Fi, contacts & more",
+      "Fast camera scanning with real-time detection",
+      "Complete history with search and smart actions",
+      "Save to gallery & share anywhere"
     ]
   },
   {
-    "id": "app2",
-    "name": "App Name Two",
-    "tagline": "Simplify your daily routine",
-    "description": "An intuitive app designed to streamline your daily activities. From morning routines to evening wind-downs, manage it all in one place.",
-    "icon": "🚀",
-    "appStoreUrl": "https://apps.apple.com/app/your-app-2",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.yourapp2",
+    "id": "wifi-scanner-pro",
+    "name": "WiFi Scanner Pro",
+    "tagline": "Take control of your wireless world",
+    "description": "The most powerful and beautiful WiFi analysis tool. See every network around you, discover devices on your network, test internet speed, and understand network congestion with gorgeous visualizations.",
+    "icon": "📡",
+    "appStoreUrl": "https://apps.apple.com/app/wifi-scanner-pro",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.neuraapps.wifiscannerpro",
     "features": [
-      "Habit tracking",
-      "Customizable routines",
-      "Progress analytics"
+      "See all WiFi networks with signal strength & security",
+      "Discover every device connected to your network",
+      "Professional internet speed testing",
+      "Visual spectrum charts to avoid congestion"
     ]
   },
   {
-    "id": "app3",
-    "name": "App Name Three",
-    "tagline": "Connect and collaborate",
-    "description": "Stay connected with your team and collaborate seamlessly. Share ideas, track progress, and build amazing things together.",
-    "icon": "✨",
-    "appStoreUrl": "https://apps.apple.com/app/your-app-3",
-    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.yourapp3",
+    "id": "file-recovery",
+    "name": "File Recovery App",
+    "tagline": "Recover your precious files with ease",
+    "description": "Your trusted companion for finding and restoring deleted or lost files. Recover photos, videos, and documents. Clean up screenshots and duplicate files to free up storage space.",
+    "icon": "📂",
+    "appStoreUrl": "https://apps.apple.com/app/file-recovery",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.neuraapps.filerecovery",
     "features": [
-      "Real-time collaboration",
-      "Secure messaging",
-      "File sharing"
+      "Smart recovery for photos, videos & documents",
+      "Remove screenshots & duplicate files",
+      "Storage insights with visual breakdown",
+      "Recovery history tracking"
     ]
   }
 ]
