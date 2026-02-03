@@ -1,0 +1,80 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import appsData from '../../../data/apps.json';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+export async function getStaticPaths() {
+  return appsData.map((app) => ({
+    params: { id: app.id },
+    props: { app },
+  }));
+}
+
+const { app } = Astro.props;
+
+// Load terms of use content
+let termsContent = '';
+if (app.id === 'qr-anything') {
+  try {
+    termsContent = readFileSync(
+      join(process.cwd(), 'docs', 'qr_anything_terms_of_use.md'),
+      'utf-8'
+    );
+  } catch (e) {
+    termsContent = '# Terms of Use\n\nContent coming soon...';
+  }
+} else {
+  // Placeholder for other apps
+  termsContent = `# Terms of Use for ${app.name}
+
+Last updated: February 3, 2026
+
+## Coming Soon
+
+The terms of use for ${app.name} are currently being prepared. Please check back soon for detailed information about the terms and conditions of using this app.
+
+For any questions in the meantime, please contact us at: neuraapps1991@gmail.com
+`;
+}
+---
+
+<Layout title={`Terms of Use - ${app.name} | NeuraApps`}>
+  <Header />
+  
+  <section class="py-16 px-4">
+    <div class="container mx-auto max-w-4xl">
+      <a href={`/apps/${app.id}`} class="inline-flex items-center text-primary hover:text-blue-600 mb-8">
+        <span class="mr-2">←</span> Back to {app.name}
+      </a>
+      
+      <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+        <div class="prose prose-lg max-w-none">
+          <div set:html={termsContent.replace(/\n/g, '<br/>').replace(/## /g, '<h2>').replace(/# /g, '<h1>').replace(/<h2>/g, '</p><h2 class="text-2xl font-bold mt-8 mb-4">').replace(/<h1>/g, '<h1 class="text-4xl font-bold mb-6">').replace(/<br\/><br\/>/g, '</p><p class="mb-4">').replace(/^/, '<p class="mb-4">')} />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>
+
+<style>
+  .prose h1 {
+    @apply text-4xl font-bold mb-6 text-gray-900;
+  }
+  .prose h2 {
+    @apply text-2xl font-bold mt-8 mb-4 text-gray-900;
+  }
+  .prose p {
+    @apply mb-4 text-gray-700 leading-relaxed;
+  }
+  .prose ul {
+    @apply list-disc pl-6 mb-4 space-y-2;
+  }
+  .prose li {
+    @apply text-gray-700;
+  }
+</style>
